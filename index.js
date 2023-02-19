@@ -13,8 +13,14 @@ const contract = new Contract("0x4A4DDfa4D5bFe0CB54F038C5E6d1E91C54c09488",
 
 const queryBlockchain = async()=>{
     const num=await contract.randomNumber();
-    const id=await contract.getTokenIdForUser('0x58b3c79302bfFcBb4eEb063aCf3fDA03d30067B7');
     console.log("This is the output===>",num)
-    console.log("this id token id==>",id)
+
 }
 queryBlockchain();
+const queryBlockchain2 = async()=>{
+ 
+    const id=await contract.getTokenIdForUser('0x58b3c79302bfFcBb4eEb063aCf3fDA03d30067B7');
+   
+    console.log("this id token id==>",id)
+}
+queryBlockchain2();
