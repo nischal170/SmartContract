@@ -6,7 +6,7 @@ const abi = require("./contract/nftContract.json");
 const signer = Wallet.fromPhrase(process.env.SEED_PHRASE, provider);
 
 //creating new contract instance
-const contract = new Contract("0x4A4DDfa4D5bFe0CB54F038C5E6d1E91C54c09488",
+const contract = new Contract("0x23026Ba3Fa8B7C9735589F3b2a2a5D094Ac82d14",
     abi,
     signer
   );
